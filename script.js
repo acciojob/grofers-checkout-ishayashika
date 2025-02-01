@@ -2,13 +2,13 @@ const getSumBtn = document.createElement("button");
 getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
 const ans=document.setAttribute("div","ans");
-
 const getSum = () => {
 //Add your code here
-	let ans=0;
+	
+	let sum=0;
 	let total=document.querySelectorAll(".price");
 	total.forEach((item)=>{
-		ans+=parseFloat(item.textContent);
+		sum+=parseFloat(item.textContent);
 	})
 	
 	//create row
@@ -22,7 +22,7 @@ const getSum = () => {
     totalCell.textContent = "Total Price";
 
 	const priceCell = document.createElement("td");
-    priceCell.textContent = ans.toFixed(2);  // Display total with 2 decimal places
+    priceCell.textContent = sum.toFixed(2);  // Display total with 2 decimal places
 
     totalRow.appendChild(totalCell);
     totalRow.appendChild(priceCell);
