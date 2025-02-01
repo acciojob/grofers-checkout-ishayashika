@@ -1,6 +1,7 @@
 const getSumBtn = document.createElement("button");
 getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
+const ans=document.setAttribute("div","ans");
 
 const getSum = () => {
 //Add your code here
@@ -9,10 +10,10 @@ const getSum = () => {
 	total.forEach((item)=>{
 		ans+=parseFloat(item.textContent);
 	})
+	
 	//create row
 	const table = document.getElementById("priceTable");
 	const tBody = table.querySelector("tbody");
-	const ans=document.setAttribute("div","ans");
 
     const totalRow = document.createElement("tr");
 
