@@ -1,10 +1,12 @@
 const getSumBtn = document.createElement("button");
 getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
-const ans=document.setAttribute("div","ans");
 const getSum = () => {
 //Add your code here
-	
+	const ans = document.createElement("div");
+
+// Set the id attribute of the div
+	ans.setAttribute("id", "ans");
 	let sum=0;
 	let total=document.querySelectorAll(".price");
 	total.forEach((item)=>{
