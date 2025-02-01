@@ -12,6 +12,7 @@ const getSum = () => {
 	//create row
 	const table = document.getElementById("priceTable");
 	const tBody = table.querySelector("tbody");
+	const ans=document.setAttribute("div","ans");
 
     const totalRow = document.createElement("tr");
 
